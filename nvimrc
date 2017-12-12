@@ -10,14 +10,14 @@ Plug 'tpope/vim-repeat'                 " make . work for plugins
 Plug 'Lokaltog/vim-easymotion'          " navigate in files
 Plug 'godlygeek/tabular'                " align text on pattern
 Plug 'tomtom/tcomment_vim'              " comment source code
-Plug 'auto_mkdir'                       " create parent dirs on save
+Plug 'DataWraith/auto_mkdir'            " create parent dirs on save
 Plug 'scrooloose/syntastic'             " check syntax
 Plug 'danro/rename.vim'                 " rename buffer and file on disk
 Plug 'bling/vim-airline'                " improved status line
 Plug 'vim-airline/vim-airline-themes'   " improved status line themes
 Plug 'wesQ3/vim-windowswap'             " swap windows with <leader>ww
 Plug 'jtratner/vim-flavored-markdown'   " markdown support
-Plug 'ctrlp.vim'                        " buffer and file explorer
+Plug 'ctrlpvim/ctrlp.vim'               " buffer and file explorer
 Plug 'chrisbra/Recover.vim'             " smart recovery of *.swp files
 Plug 'ConradIrwin/vim-bracketed-paste'  " transparent pasting (no :set paste!)
 
