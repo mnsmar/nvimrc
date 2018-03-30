@@ -39,6 +39,7 @@ Plug 'fatih/vim-go'
 " plugins for Python
 Plug 'davidhalter/jedi-vim' " enable Python autocompletion
 Plug 'zchee/deoplete-jedi'
+Plug 'tell-k/vim-autopep8'  " format Python code according to pep8
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -221,3 +222,13 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 """""""""""""""""""            jedi-vim               """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:jedi#max_doc_height = 15
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""          vim-autopep8             """""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType python set equalprg=autopep8\ -
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""          vim-airline             """""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_detect_spell=0
