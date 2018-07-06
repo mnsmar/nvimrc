@@ -160,7 +160,6 @@ let g:syntastic_id_checkers=1
 let g:syntastic_enable_signs=1
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_perl_checkers=['perl', 'perlcritic']
-let g:syntastic_go_checkers = ['go']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""           Vim-flavored-markdown             """"""""""""""""
