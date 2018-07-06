@@ -205,7 +205,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_jump_to_error = 0 "avoid empty buffer for go-test (Issue #367)
 let g:go_fmt_command = "goimports"
-let g:go_list_type = "quickfix"
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_auto_type_info = 1
