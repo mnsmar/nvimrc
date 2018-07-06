@@ -210,6 +210,12 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_auto_type_info = 1
 let g:go_template_autocreate = 0
+let g:go_gocode_unimported_packages = 1
+" Build on save.
+augroup auto_go
+	autocmd!
+	autocmd BufWritePost *.go :GoBuild
+augroup end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""            ultisnips              """""""""""""""""""""
