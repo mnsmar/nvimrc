@@ -41,6 +41,9 @@ Plug 'davidhalter/jedi-vim' " enable Python autocompletion
 Plug 'zchee/deoplete-jedi'
 Plug 'tell-k/vim-autopep8'  " format Python code according to pep8
 
+" plugins for nextflow
+Plug 'LukeGoodsell/nextflow-vim' " nextflow syntax highlighting
+
 " Add plugins to &runtimepath
 call plug#end()
 
