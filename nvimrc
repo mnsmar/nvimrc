@@ -23,7 +23,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'  " transparent pasting (no :set paste!)
 
 " colors
 Plug 'altercation/vim-colors-solarized'
-Plug 'tomasr/molokai'
+Plug 'mnsmar/molokai'
 
 " plugins for autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
