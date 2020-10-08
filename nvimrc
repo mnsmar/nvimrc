@@ -101,7 +101,6 @@ set backspace=2      " more powerful backspacing
 set completeopt-=preview " disable preview buffer with omnicomplete
 set spell spelllang=en " enable spelling for english
 set clipboard+=unnamedplus "always use the clipboard
-"set guicursor=       "fix for Konsole https://github.com/neovim/neovim/issues/6403
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""           Maps             """"""""""""""""""""""""""
