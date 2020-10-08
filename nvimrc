@@ -23,6 +23,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'  " transparent pasting (no :set paste!)
 
 " colors
 Plug 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
 
 " plugins for autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -58,6 +59,8 @@ let mapleader=","
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+let g:rehash256 = 1
+colorscheme molokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""           Settings             """"""""""""""""""""""""
