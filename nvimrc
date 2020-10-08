@@ -242,3 +242,10 @@ autocmd FileType python set equalprg=autopep8\ -
 """""""""""""""""""          vim-airline             """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_detect_spell=0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""    vim syntax for snakemake       """""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake
+au BufNewFile,BufRead *.smk set syntax=snakemake
