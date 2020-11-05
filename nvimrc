@@ -255,3 +255,4 @@ let g:airline_detect_spell=0
 au BufNewFile,BufRead Snakefile set syntax=snakemake
 au BufNewFile,BufRead *.snake set syntax=snakemake
 au BufNewFile,BufRead *.smk set syntax=snakemake
+call tcomment#type#Define('snakemake', '# %s')
