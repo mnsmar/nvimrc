@@ -100,6 +100,7 @@ set listchars=tab:▸\ ,eol:¬ " Symbols for tabstops and EOLs
 set backspace=2      " more powerful backspacing
 set completeopt-=preview " disable preview buffer with omnicomplete
 set spell spelllang=en " enable spelling for english
+set spellcapcheck=
 set clipboard+=unnamedplus "always use the clipboard
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
