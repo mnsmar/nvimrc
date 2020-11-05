@@ -231,7 +231,7 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 """""""""""""""""""            deoplete               """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_delay = 40
+call deoplete#custom#option('auto_complete_delay', 40)
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
