@@ -28,6 +28,7 @@ Plug 'mnsmar/molokai'
 " plugins for autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'zchee/deoplete-jedi'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " plugins for tmux integration
@@ -38,8 +39,6 @@ Plug 'benmills/vimux' | Plug 'benmills/vimux-golang' " run go tests in tmux
 Plug 'fatih/vim-go'
 
 " plugins for Python
-Plug 'davidhalter/jedi-vim' " enable Python autocompletion
-Plug 'zchee/deoplete-jedi'
 Plug 'tell-k/vim-autopep8'  " format Python code according to pep8
 
 " plugins for nextflow
