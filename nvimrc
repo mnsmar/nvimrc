@@ -11,7 +11,6 @@ Plug 'Lokaltog/vim-easymotion'          " navigate in files
 Plug 'godlygeek/tabular'                " align text on pattern
 Plug 'tomtom/tcomment_vim'              " comment source code
 Plug 'DataWraith/auto_mkdir'            " create parent dirs on save
-Plug 'scrooloose/syntastic'             " check syntax
 Plug 'danro/rename.vim'                 " rename buffer and file on disk
 Plug 'bling/vim-airline'                " improved status line
 Plug 'vim-airline/vim-airline-themes'   " improved status line themes
@@ -20,6 +19,9 @@ Plug 'jtratner/vim-flavored-markdown'   " markdown support
 Plug 'ctrlpvim/ctrlp.vim'               " buffer and file explorer
 Plug 'chrisbra/Recover.vim'             " smart recovery of *.swp files
 Plug 'ConradIrwin/vim-bracketed-paste'  " transparent pasting (no :set paste!)
+
+" Linting
+Plug 'dense-analysis/ale'
 
 " colors
 Plug 'altercation/vim-colors-solarized'
@@ -149,22 +151,6 @@ nmap s <Plug>(easymotion-s)
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""           Syntastic             """""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_balloons=1
-let g:syntastic_always_populate_loc_list=0
-let g:syntastic_echo_current_error=0
-let g:syntastic_auto_jump=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_loc_list_height=5
-let g:syntastic_aggregate_errors=1
-let g:syntastic_id_checkers=1
-let g:syntastic_enable_signs=1
-let g:syntastic_enable_perl_checker = 1
-let g:syntastic_perl_checkers=['perl', 'perlcritic']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""           Vim-flavored-markdown             """"""""""""""""
