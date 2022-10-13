@@ -194,6 +194,7 @@ au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>e <Plug>(go-rename)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>tc <Plug>(go-coverage)
+autocmd FileType go nmap <Leader>i <Plug>(go-info)
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
@@ -244,6 +245,11 @@ let g:airline_detect_spell=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""    vim syntax for snakemake       """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au BufNewFile,BufRead Snakefile set syntax=snakemake
-au BufNewFile,BufRead *.snake set syntax=snakemake
-au BufNewFile,BufRead *.smk set syntax=snakemake
+" au BufNewFile,BufRead Snakefile set syntax=snakemake
+" au BufNewFile,BufRead *.snake set syntax=snakemake
+" au BufNewFile,BufRead *.smk set syntax=snakemake
+" https://vim.fandom.com/wiki/Creating_your_own_syntax_files
+au BufRead,BufNewFile Snakefile setfiletype snakemake
+au BufRead,BufNewFile *.snake setfiletype snakemake
+au BufRead,BufNewFile *.smk setfiletype snakemake
+" call tcomment#type#Define('snakemake', '# %s')
