@@ -1,5 +1,6 @@
-let g:python_host_prog = '$HOME/conda/envs/nvim_py2/bin/python'
-let g:python3_host_prog = '$HOME/conda/envs/nvim_py3/bin/python'
+let g:python_host_prog = '/home/maragkakise2/conda/envs/nvim_py2/bin/python'
+let g:python3_host_prog = '/home/maragkakise2/conda/envs/nvim_py3/bin/python'
+let g:autopep8_cmd = '/home/maragkakise2/conda/envs/nvim_py3/bin/autopep8'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""          vim-plug            """""""""""""""""""""""""
@@ -241,8 +242,8 @@ let g:jedi#max_doc_height = 15
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""          vim-autopep8             """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType python set equalprg=autopep8\ -
-autocmd FileType snakemake set equalprg=autopep8\ -
+autocmd FileType python set equalprg=/home/maragkakise2/conda/envs/nvim_py3/bin/autopep8\ -
+autocmd FileType snakemake set equalprg=/home/maragkakise2/conda/envs/nvim_py3/bin/autopep8\ -
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""          vim-airline             """""""""""""""""""""
