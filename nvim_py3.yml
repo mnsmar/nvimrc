@@ -1,0 +1,10 @@
+name: nvim_py3
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - neovim
+    - autopep8
+    - jedi
