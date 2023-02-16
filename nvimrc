@@ -46,6 +46,9 @@ Plug 'tell-k/vim-autopep8'  " format Python code according to pep8
 " plugins for nextflow
 Plug 'LukeGoodsell/nextflow-vim' " nextflow syntax highlighting
 
+" plugins for snakemake
+Plug 'mnsmar/snakemake', {'rtp': 'misc/vim'}
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -163,9 +166,9 @@ let g:ale_linters = {
 """"""""""""""           Vim-flavored-markdown             """"""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup markdown
-	au!
-	au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-aug	 END
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+aug  END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""           CtrlP             """""""""""""""""""""""""
@@ -211,8 +214,8 @@ let g:go_template_autocreate = 0
 let g:go_gocode_unimported_packages = 1
 " Build on save.
 augroup auto_go
-	autocmd!
-	autocmd BufWritePost *.go :GoBuild
+    autocmd!
+    autocmd BufWritePost *.go :GoBuild
 augroup end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -236,6 +239,7 @@ let g:jedi#max_doc_height = 15
 """""""""""""""""""          vim-autopep8             """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python set equalprg=autopep8\ -
+autocmd FileType snakemake set equalprg=autopep8\ -
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""          vim-airline             """""""""""""""""""""
@@ -245,11 +249,6 @@ let g:airline_detect_spell=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""    vim syntax for snakemake       """""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" au BufNewFile,BufRead Snakefile set syntax=snakemake
-" au BufNewFile,BufRead *.snake set syntax=snakemake
-" au BufNewFile,BufRead *.smk set syntax=snakemake
-" https://vim.fandom.com/wiki/Creating_your_own_syntax_files
-au BufRead,BufNewFile Snakefile setfiletype snakemake
-au BufRead,BufNewFile *.snake setfiletype snakemake
-au BufRead,BufNewFile *.smk setfiletype snakemake
-" call tcomment#type#Define('snakemake', '# %s')
+autocmd BufRead,BufNewFile Snakefile set expandtab
+autocmd BufRead,BufNewFile *.smk set expandtab
+set nofoldenable
